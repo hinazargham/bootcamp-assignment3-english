@@ -8,7 +8,7 @@ function Hello({myhello, myname}) {
         <div>
         <p>HELLO from CHILD component ie. "{myhello}" file </p>
         <br/>
-        <i>Submitted by Engr. {myname}</i>
+        <i>Submitted by {myname}</i>
     </div>
 
     )
