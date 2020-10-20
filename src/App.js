@@ -1,23 +1,22 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Hello from "./hello.js";
 
-function App() {
+function App(props) {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <h1><b>BOOTCAMP2020</b></h1>
+          <h2>ASSIGNMENT no. {props.session - 1} ({props.class} Class) </h2>
+          <h3>REACT TUTORIAL by {props.teachers}</h3>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+        <Hello myname="Hina Zargham" myhello="hello.js"></Hello>
+        <img src={logo} className="App-logo" alt="logo" width="250" />
+     
       </header>
     </div>
   );
